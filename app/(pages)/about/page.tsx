@@ -13,7 +13,7 @@ const About = ()=>{
     { name: "Next.js", level: 35 },
     { name: "Redux", level: 60 },
     { name: "Unity / C#", level: 35 },
-    { name: "HTML & CSS", level: 60 },
+    { name: "HTML & CSS", level: 70 },
     { name: "Tailwind CSS", level: 65 },
   ];
 
@@ -66,12 +66,15 @@ const About = ()=>{
   transition={{ duration: 0.5 }}
   className="mt-10"
 >
-     <h1 className="text-center text-4xl">
+     <h1 className="text-center text-4xl my-10">
                Technical Skills
             </h1>
-               {skills.map((skill) => (
-  <SkillBar skill={skill.name} percentage={skill.level} />
-      ))}
+               <div className="grid place-items-center font-Karla grid-cols-2">
+               {skills.map((skill,index) => (
+               
+                 <SkillBar key={index} skill={skill.name} percentage={skill.level} />
+                ))}
+      </div>
       </motion.div>
          </div>
       </main>

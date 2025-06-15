@@ -11,11 +11,11 @@ const SkillBar = ({ skill, percentage }:TSkillBar) => {
       {/* Title and Percentage */}
       <div className="flex justify-between items-center mb-2">
         <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">{skill}</h3>
-        <span className="text-sm font-medium text-blue-600 dark:text-blue-400">{percentage}%</span>
+        <span className='text-sm bg-gradient-to-r from-zinc-300 to-zinc-500 bg-clip-text text-transparent'>{percentage}%</span>
       </div>
 
       {/* Progress Bar Container */}
-      <div className="w-full bg-gray-200 rounded-full h-3 overflow-hidden dark:bg-gray-700">
+      <div className="w-80 bg-gray-200  rounded-full h-3 overflow-hidden dark:bg-gray-700">
         <div
           className="bg-gradient-to-r from-blue-500 to-purple-600 h-full rounded-full transition-all duration-1000 ease-in-out"
           style={{ width: `${percentage}%` }}
