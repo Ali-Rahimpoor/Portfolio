@@ -1,10 +1,9 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
-  
-};
-module.exports = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: 'export', // فعال کردن خروجی استاتیک
+  images: {
+    unoptimized: true, // غیرفعال کردن بهینه‌سازی تصاویر (برای GitHub Pages)
+  },
   async redirects() {
     return [
       {
@@ -16,4 +15,4 @@ module.exports = {
   },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
