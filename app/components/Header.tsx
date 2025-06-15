@@ -4,6 +4,7 @@ import { IoPersonCircleOutline } from "react-icons/io5";
 import { GoProjectSymlink } from "react-icons/go";
 import {motion,AnimatePresence, animate} from "framer-motion";
 import { label } from "framer-motion/client";
+import Link from "next/link";
 const Header = ()=>{
 
    const navItems = [
@@ -18,20 +19,21 @@ const Header = ()=>{
             <motion.h1 
             initial={{opacity:0,x:-20}}
             animate={{opacity:1,x:0}} 
-            className="text-3xl">Ali<span className="text-gray-400">Developer</span>
+            className="text-3xl bg-gradient-to-r from-blue-200 to-purple-300 bg-clip-text text-transparent">Ali-<span className="">Rahimpoor</span>
             </motion.h1>
             <ul className="flex items-center justify-between gap-x-10 pr-12 text-xl">
                {
                   navItems.map(item=>(
                      <li key={item.id}>
-                        <motion.button 
-                        className="flex items-center justify-center"
+                        <motion.button                        
                         whileTap={{scale:0.95}} 
                         whileHover={{scale:1.10}} 
                         initial={{opacity:0,y:-20}} 
                         animate={{opacity:1,y:0}}>
+                           <Link  className="flex items-center justify-center" href={"/"+item.label.toLocaleLowerCase()}>
                            {item.icon}
                            {item.label}
+                           </Link>
                         </motion.button>
                      </li>
                   ))

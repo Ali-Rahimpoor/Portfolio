@@ -4,7 +4,20 @@
   --background: #ffffff;
   --foreground: #171717;
 }
+@layer{
+  .custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
 
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #1f2937; /* same as sidebar bg */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+}
+}
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
