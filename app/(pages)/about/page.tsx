@@ -18,15 +18,15 @@ const About = ()=>{
   ];
 
    return (
-      <main className="w-[900px] font-Tinos mx-auto">
-          <motion.h1 className="font-Tinos-Bold text-center mb-15 text-6xl" initial={{opacity:0,x:-30}} animate={{opacity:1,x:0}}>
+      <main className="xl:w-[900px] w-[90%] font-Tinos mx-auto">
+          <motion.h1 className="font-Tinos-Bold text-center mt-5 mb-15 text-6xl" initial={{opacity:0,x:-30}} animate={{opacity:1,x:0}}>
          About <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Me</span>
       </motion.h1>
-         <div className="flex justify-between p-1">
+         <div className="flex lg:flex-row flex-col-reverse items-center justify-between p-1">
          <div>
             <motion.div  initial={{ opacity: 0, scale: 0.9 , y:-20 }}
                             animate={{ opacity: 1, scale: 1, y:0, transition: { delay: 0.6 } }} className="relative">
-                        <div className="w-48 h-48 md:w-60 md:h-60 rounded-full overflow-hidden border-4 border-zinc-500/30 mb-6">
+                        <div className="w-60 h-60 md:w-78 md:h-78 lg:w-60 my-10 lg:h-60 rounded-full overflow-hidden border-4 border-zinc-500/30 mb-6">
                                   {/* Placeholder for profile image */}
                                   <div className="w-full h-full flex items-center justify-center">
                                     <img className="w-full h-full" src={img_Url} alt="" />
@@ -38,7 +38,7 @@ const About = ()=>{
                         </div>
                   </motion.div>
          </div>
-         <motion.div initial={{opacity:0,}} animate={{opacity:1 ,transition: { delay: 0.3 }}} className="w-140 h-70 overflow-y-scroll custom-scrollbar">
+         <motion.div initial={{opacity:0,}} animate={{opacity:1 ,transition: { delay: 0.3 }}} className="md:w-140 md:text-base text-sm w-[90%] mx-auto h-70 overflow-y-scroll custom-scrollbar">
          <motion.p initial={{opacity:0,x:-30}} animate={{opacity:1,x:0,}}>
             I'm a passionate <span className="bg-gradient-to-r from-purple-200 to-blue-200 bg-clip-text text-transparent">Front-End Developer</span> and Indie <span className="bg-gradient-to-r from-purple-200 to-blue-200 bg-clip-text text-transparent">Game Developer</span> with hands-on experience building interactive web applications and games. I specialize in modern <span className="bg-gradient-to-r from-purple-200 to-blue-200 bg-clip-text text-transparent">JavaScript</span> technologies such as <span className="bg-gradient-to-r from-purple-200 to-blue-200 bg-clip-text text-transparent block">"React , TypeScript , Next.js , and Redux , crafting clean, responsive, and user-friendly interfaces."</span> 
          </motion.p>
@@ -66,7 +66,7 @@ const About = ()=>{
   transition={{ duration: 0.5 }}
   className="mt-10"
 >
-     <h1 className="text-center text-4xl my-10">
+     <h1 className="text-center text-2xl sm:text-4xl my-10">
                Technical Skills
             </h1>
                <div className="grid place-items-center font-Karla grid-cols-2">

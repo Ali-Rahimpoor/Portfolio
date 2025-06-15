@@ -37,7 +37,7 @@ const Projects = () => {
    ]
 
    return (
-      <main className="font-Tinos mx-auto container px-5 py-10">
+      <main className="font-Tinos mx-auto container lg:px-5 py-10">
          <motion.h2 initial={{opacity:0,y:-30}} animate={{opacity:1,y:0,transition:{delay:0.1}}} className="text-4xl font-bold text-center mb-15">My Projects</motion.h2>
          <motion.ul initial={{opacity:0,y:200}} animate={{opacity:1,y:0,transition: { delay: 0.5 }}} className="grid grid-cols-1 sm:grid-cols-2 gap-8 place-items-center">
             {projects.map((project, index) => (
@@ -63,7 +63,7 @@ const Projects = () => {
                   {/* Text Content */}
                   <div className="p-4 h-35">
                      <h3 className="text-2xl font-bold text-gray-800">{project.title}</h3>
-                     <p className="mt-2 text-gray-600">{project.description}</p>
+                     <p className="mt-2 line-clamp-3 lg:text-base text-sm text-gray-600">{project.description}</p>
                   </div>
                </li>
             ))}
