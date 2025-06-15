@@ -1,6 +1,7 @@
 "use client"
 const img_Url = "/assets/img/me.jpg"
 import {motion} from 'framer-motion';
+import Link from 'next/link';
 import { FaCode } from "react-icons/fa6";
 export default function Home() {
   return (
@@ -15,12 +16,14 @@ export default function Home() {
                   animate={{ opacity: 1, y: 0, transition: { delay: 0.4 } }}>.....</motion.p>
         <motion.div  initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0, transition: { delay: 0.5 } }}  className="mt-10 font-Karla flex items-center justify-between gap-x-6">
+                    <Link href={'/projects'}>
           <button className="bg-blue-400 p-2 rounded hover:scale-110 transition-transform">
              View My Work
-          </button>
+          </button></Link>
+          <Link href={'/about'}>
           <button className="p-2 rounded border border-gray-300 hover:scale-110 transition-transform hover:bg-zinc-800">
              About Me
-          </button>
+          </button></Link>
           </motion.div>
         </div>
       </div>
