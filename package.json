@@ -2,12 +2,12 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Ali-Rahimpoor.github.io/portfolio/",
+  "homepage": "https://Ali-Rahimpoor.github.io/Portfolio/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "deploy": "gh-pages -d out",
+    "predeploy": "npm run build"
   },
   "dependencies": {
     "framer-motion": "^12.18.1",

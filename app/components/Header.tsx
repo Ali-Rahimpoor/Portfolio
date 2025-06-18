@@ -1,10 +1,10 @@
 "use client"
-import { RiHome4Line } from "react-icons/ri";import { AiFillHome } from "react-icons/ai";
+import { RiHome4Line } from "react-icons/ri";
 import { IoPersonCircleOutline } from "react-icons/io5";
 import { GoProjectSymlink } from "react-icons/go";
-import {motion,AnimatePresence, animate} from "framer-motion";
-import { label } from "framer-motion/client";
+import {motion} from "framer-motion";
 import Link from "next/link";
+
 const Header = ()=>{
 
    const navItems = [

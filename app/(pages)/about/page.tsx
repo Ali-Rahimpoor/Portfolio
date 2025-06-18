@@ -3,7 +3,8 @@ import {motion} from "framer-motion"
 import { FaGithub } from "react-icons/fa6"
 import { CgMail } from "react-icons/cg"
 import SkillBar from "@/app/components/Skillbar"
-const img_Url = "/assets/img/about.jpg"
+import Image from "next/image"
+const img_Url = "/Portfolio/assets/img/about.jpg"
 const About = ()=>{
 
     const skills = [
@@ -29,7 +30,7 @@ const About = ()=>{
                         <div className="w-60 h-60 md:w-78 md:h-78 lg:w-60 my-10 lg:h-60 rounded-full overflow-hidden border-4 border-zinc-500/30 mb-6">
                                   {/* Placeholder for profile image */}
                                   <div className="w-full h-full flex items-center justify-center">
-                                    <img className="w-full h-full" src={img_Url} alt="" />
+                                    <Image className="w-full h-full" src={img_Url} alt="" />
                                   </div>
                           </div>
                           <div className="flex justify-center gap-x-10">
@@ -40,16 +41,16 @@ const About = ()=>{
          </div>
          <motion.div initial={{opacity:0,}} animate={{opacity:1 ,transition: { delay: 0.3 }}} className="md:w-140 md:text-base text-sm w-[90%] mx-auto h-70 overflow-y-scroll custom-scrollbar">
          <motion.p initial={{opacity:0,x:-30}} animate={{opacity:1,x:0,}}>
-            I'm a passionate <span className="bg-gradient-to-r from-purple-200 to-blue-200 bg-clip-text text-transparent">Front-End Developer</span> and Indie <span className="bg-gradient-to-r from-purple-200 to-blue-200 bg-clip-text text-transparent">Game Developer</span> with hands-on experience building interactive web applications and games. I specialize in modern <span className="bg-gradient-to-r from-purple-200 to-blue-200 bg-clip-text text-transparent">JavaScript</span> technologies such as <span className="bg-gradient-to-r from-purple-200 to-blue-200 bg-clip-text text-transparent block">"React , TypeScript , Next.js , and Redux , crafting clean, responsive, and user-friendly interfaces."</span> 
+            Im a passionate <span className="bg-gradient-to-r from-purple-200 to-blue-200 bg-clip-text text-transparent">Front-End Developer</span> and Indie <span className="bg-gradient-to-r from-purple-200 to-blue-200 bg-clip-text text-transparent">Game Developer</span> with hands-on experience building interactive web applications and games. I specialize in modern <span className="bg-gradient-to-r from-purple-200 to-blue-200 bg-clip-text text-transparent">JavaScript</span> technologies such as <span className="bg-gradient-to-r from-purple-200 to-blue-200 bg-clip-text text-transparent block">React , TypeScript , Next.js , and Redux , crafting clean, responsive, and user-friendly interfaces.</span> 
          </motion.p>
            <motion.p initial={{opacity:0,x:-30}} animate={{opacity:1,x:0,}}>
-            Alongside web development, I've explored game development using Unity and C# , where I’ve created small indie games and experimented with gameplay mechanics, animations, and UI systems. These personal projects reflect my creativity, problem-solving mindset, and love for interactive experiences.
+            Alongside web development, Ive explored game development using Unity and C# , where I’ve created small indie games and experimented with gameplay mechanics, animations, and UI systems. These personal projects reflect my creativity, problem-solving mindset, and love for interactive experiences.
          </motion.p>
           <motion.p initial={{opacity:0,x:-30}} animate={{opacity:1,x:0,}}>
-            As someone eager to grow and contribute, I'm currently looking for <span className="bg-gradient-to-r from-purple-200 to-blue-200 bg-clip-text text-transparent">opportunities</span> to join a dynamic team — whether through an internship , <span className="bg-gradient-to-r from-purple-200 to-blue-200 bg-clip-text text-transparent">junior developer</span> role , or freelance collaborations. My goal is to further develop my skills, work on meaningful projects, and become a valuable part of a forward-thinking development team.
+            As someone eager to grow and contribute, Im currently looking for <span className="bg-gradient-to-r from-purple-200 to-blue-200 bg-clip-text text-transparent">opportunities</span> to join a dynamic team — whether through an internship , <span className="bg-gradient-to-r from-purple-200 to-blue-200 bg-clip-text text-transparent">junior developer</span> role , or freelance collaborations. My goal is to further develop my skills, work on meaningful projects, and become a valuable part of a forward-thinking development team.
          </motion.p>
          <motion.p initial={{opacity:0,x:-30}} animate={{opacity:1,x:0}}>
-            If you're looking for a <span className="bg-gradient-to-r from-purple-200 to-blue-200 bg-clip-text text-transparent">motivated and enthusiastic</span> developer who loves learning and building, feel free to reach out!
+            If youre looking for a <span className="bg-gradient-to-r from-purple-200 to-blue-200 bg-clip-text text-transparent">motivated and enthusiastic</span> developer who loves learning and building, feel free to reach out!
          </motion.p>
             <motion.div initial={{opacity:0,x:-30}} animate={{opacity:1,x:0}} className="flex items-center gap-x-1">
                <CgMail/>

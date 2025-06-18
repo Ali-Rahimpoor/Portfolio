@@ -1,6 +1,7 @@
 "use client"
-const img_Url = "/assets/img/me.jpg"
+const img_Url = "/Portfolio/assets/img/me.jpg"
 import {motion} from 'framer-motion';
+import Image from 'next/image';
 import Link from 'next/link';
 import { FaCode } from "react-icons/fa6";
 export default function Home() {
@@ -9,7 +10,7 @@ export default function Home() {
       <div className="flex items-center justify-center">
         <div className="">
         <motion.h1  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0, transition: { delay: 0.2 } }} className="text-4xl font-Tinos-Bold">Hi, i'm Ali</motion.h1>
+                  animate={{ opacity: 1, y: 0, transition: { delay: 0.2 } }} className="text-4xl font-Tinos-Bold">Hi, im Ali</motion.h1>
         <motion.h2  initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0, transition: { delay: 0.3 } }} className="my-1 text-gray-400">junior FrontEnd Developer</motion.h2>
         <motion.p   initial={{ opacity: 0, y: 20 }}
@@ -33,7 +34,7 @@ export default function Home() {
             <div className="w-60 h-60 md:w-90 md:h-90 rounded-full overflow-hidden border-4 border-zinc-500/30 mb-6 hover:scale-105 transition-transform">
                       {/* Placeholder for profile image */}
                       <div className="w-full h-full flex items-center justify-center">
-                        <img className="w-full h-full" src={img_Url} alt="" />
+                        <Image className="w-full h-full" src={img_Url} alt="" />
                       </div>
               </div>
               <FaCode className="sm:size-20 size-15 p-3 sm:p-5 absolute -z-10 bottom-1 right-1 border-4 rounded-full  border-zinc-500/30 text-white"/>

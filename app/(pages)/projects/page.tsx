@@ -1,36 +1,37 @@
 'use client'
 import {motion} from "framer-motion"
+import Image from "next/image"
 import Link from 'next/link'
 
 const Projects = () => {
    const projects = [
       {
          title: "Online Shop",
-         img_url: "/assets/projectImg/onlineShop.png",
+         img_url: "/Portfolio/assets/projectImg/onlineShop.png",
          description: "Modern e-commerce application built with cutting-edge frontend technologies for my developer portfolio.",
          link: "https://github.com/Ali-Rahimpoor/demo-OnllineShop" 
       },
       {
          title: "FeedBack Application",
-         img_url: "/assets/projectImg/comment.png",
+         img_url: "/Portfolio/assets/projectImg/comment.png",
          description: "A frontend project built with React + Vite + TypeScript for displaying and managing user feedback.",
          link: "https://ali-rahimpoor.github.io/FeedBack/" 
       },
       {
          title: "Weather App",
-         img_url: "/assets/projectImg/weather.png",
+         img_url: "/Portfolio/assets/projectImg/weather.png",
          description: "Show Weather website modern and responsive project",
          link: "https://ali-rahimpoor.github.io/Weather/" 
       },
       {
          title: "Todo List",
-         img_url: "/assets/projectImg/todo.png",
+         img_url: "/Portfolio/assets/projectImg/todo.png",
          description: "A modern Todo List application built with React, TypeScript, Tailwind CSS, and Redux Toolkit. This application allows users to manage their tasks efficiently with a clean and responsive interface.",
          link: "https://ali-rahimpoor.github.io/TodoList/" 
       },
       {
          title: "Image Gallery",
-         img_url: "/assets/projectImg/gallery.png",
+         img_url: "/Portfolio/assets/projectImg/gallery.png",
          description: "Image Gallery webSite this website get photo from Nasa Api",
          link: "https://ali-rahimpoor.github.io/ImageGallery/" 
       },
@@ -47,14 +48,14 @@ const Projects = () => {
                >
                   {/* Project Image */}
                   <div className="relative h-100 overflow-hidden">
-                     <img
+                     <Image
                         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                         src={project.img_url}
                         alt={project.title}
                      />
                      {/* Overlay with Link on Hover */}
                      <div className="absolute inset-0 bg-black/70 bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <Link href={project.link} className="text-white text-xl font-semibold underline">
+                        <Link target="_blank" href={project.link} className="text-white text-xl font-semibold underline">
                               View Project
                         </Link>
                      </div>
