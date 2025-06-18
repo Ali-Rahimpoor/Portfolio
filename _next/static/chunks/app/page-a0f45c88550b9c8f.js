@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[974],{127:(e,u,s)=>{"use strict";s.r(u),s.d(u,{default:()=>l});var r=s(2115),t=s(8999);function l(){let e=(0,t.useRouter)();return(0,r.useEffect)(()=>{e.push("/Portfolio/home")},[e]),null}},7947:(e,u,s)=>{Promise.resolve().then(s.bind(s,127))}},e=>{var u=u=>e(e.s=u);e.O(0,[441,684,358],()=>u(7947)),_N_E=e.O()}]);
