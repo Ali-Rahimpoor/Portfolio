@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+@layer{
+  .custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #1f2937; /* same as sidebar bg */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+}
+}
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+@font-face {
+  font-family: Tinos;
+  src: url('/src/assets/font/Tinos/Tinos-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: Tinos-Bold;
+  src: url('/src/assets/font/Tinos/Tinos-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: Karla;
+  src: url('/src/assets/font/Karla/Karla-Medium.ttf') format('truetype');
+}
+
+@theme{
+  --font-Tinos:Tinos;
+  --font-Tinos-Bold:Tinos-Bold;
+  --font-Karla:Karla;
+}
