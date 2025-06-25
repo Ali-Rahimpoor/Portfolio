@@ -1,5 +1,4 @@
-
-const img_Url = "/src/assets/img/me.jpg"
+import img_me from "../../src/assets/img/me.jpg";
 import {motion} from 'framer-motion';
 import { Link } from 'react-router';
 import { FaCode } from "react-icons/fa6";
@@ -33,7 +32,7 @@ export default function Home() {
             <div className="w-60 h-60 md:w-90 md:h-90 rounded-full overflow-hidden border-4 border-zinc-500/30 mb-6 hover:scale-105 transition-transform">
                       {/* Placeholder for profile image */}
                       <div className="w-full h-full flex items-center justify-center">
-                        <img className="w-full h-full" src={img_Url} alt="" />
+                        <img className="w-full h-full" src={img_me} alt="" />
                       </div>
               </div>
               <FaCode className="sm:size-20 size-15 p-3 sm:p-5 absolute -z-10 bottom-1 right-1 border-4 rounded-full  border-zinc-500/30 text-white"/>

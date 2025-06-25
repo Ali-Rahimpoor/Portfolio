@@ -22,7 +22,10 @@ export const router = createBrowserRouter([
             path:"/projects",
             element:<Projects/>
          },
-      ]
+      ],
    }
-])
+],
+{
+   basename:"/Portfolio"
+})
    

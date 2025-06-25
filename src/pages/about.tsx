@@ -2,7 +2,7 @@ import {motion} from "framer-motion"
 import { FaGithub } from "react-icons/fa6"
 import { CgMail } from "react-icons/cg"
 import SkillBar from "../components/Skillbar"
-const img_Url = "/src/assets/img/about.jpg";
+import img_URL from "../../src/assets/img/about.jpg";
 const About = ()=>{
 
     const skills = [
@@ -28,7 +28,7 @@ const About = ()=>{
                         <div className="w-60 h-60 md:w-78 md:h-78 lg:w-60 my-10 lg:h-60 rounded-full overflow-hidden border-4 border-zinc-500/30 mb-6">
                                   {/* Placeholder for profile image */}
                                   <div className="w-full h-full flex items-center justify-center">
-                                    <img className="w-full h-full" src={img_Url} alt="" />
+                                    <img className="w-full h-full" src={img_URL} alt="" />
                                   </div>
                           </div>
                           <div className="flex justify-center gap-x-10">

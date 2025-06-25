@@ -1,34 +1,39 @@
 import {motion} from "framer-motion"
 import { Link } from "react-router"
+import OnlineShop_img from "../assets/projectImg/onlineShop.png";
+import FeedBack_img from "../assets/projectImg/comment.png";
+import Gallery_img from "../assets/projectImg/gallery.png";
+import Todo_img from "../assets/projectImg/todo.png";
+import Weather_img from "../assets/projectImg/weather.png";
 const Projects = () => {
    const projects = [
       {
          title: "Online Shop",
-         img_url: "/src/assets/projectImg/onlineShop.png",
+         img_url: OnlineShop_img,
          description: "Modern e-commerce application built with cutting-edge frontend technologies for my developer portfolio.",
          link: "https://github.com/Ali-Rahimpoor/demo-OnllineShop" 
       },
       {
          title: "FeedBack Application",
-         img_url: "/src/assets/projectImg/comment.png",
+         img_url:FeedBack_img,
          description: "A frontend project built with React + Vite + TypeScript for displaying and managing user feedback.",
          link: "https://ali-rahimpoor.github.io/FeedBack/" 
       },
       {
          title: "Weather App",
-         img_url: "/src/assets/projectImg/weather.png",
+         img_url: Weather_img,
          description: "Show Weather website modern and responsive project",
          link: "https://ali-rahimpoor.github.io/Weather/" 
       },
       {
          title: "Todo List",
-         img_url: "/src/assets/projectImg/todo.png",
+         img_url: Todo_img,
          description: "A modern Todo List application built with React, TypeScript, Tailwind CSS, and Redux Toolkit. This application allows users to manage their tasks efficiently with a clean and responsive interface.",
          link: "https://ali-rahimpoor.github.io/TodoList/" 
       },
       {
          title: "Image Gallery",
-         img_url: "/src/assets/projectImg/gallery.png",
+         img_url: Gallery_img,
          description: "Image Gallery webSite this website get photo from Nasa Api",
          link: "https://ali-rahimpoor.github.io/ImageGallery/" 
       },
