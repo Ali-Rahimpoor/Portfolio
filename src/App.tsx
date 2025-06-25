@@ -7,12 +7,10 @@ const App = ()=> {
   return (
     <>
       <div className="flex flex-col justify-between p-3 h-[100vh]">
-     <Header/>
-     <main>
-        <Outlet/>
-     </main>
-     <Footer/>
-     </div>
+       <Header/>
+       <Outlet/>
+       <Footer/>
+      </div>
     </>
   )
 }

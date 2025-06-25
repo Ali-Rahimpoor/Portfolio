@@ -2,11 +2,11 @@ import { RiHome4Line } from "react-icons/ri";
 import { IoPersonCircleOutline } from "react-icons/io5";
 import { GoProjectSymlink } from "react-icons/go";
 import {motion} from "framer-motion";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 const Header = ()=>{
 
    const navItems = [
-      {id:"home",label:"Home",icon:<RiHome4Line/>,link:"/"},
+      {id:"home",label:"Home",icon:<RiHome4Line/>,link:""},
       {id:"about",label:"About",icon:<IoPersonCircleOutline/>,link:"/about"},
       {id:"projects",label:"Projects",icon:<GoProjectSymlink/>,link:"/projects"},
    ]
@@ -17,7 +17,10 @@ const Header = ()=>{
             <motion.h1 
             initial={{opacity:0,x:-20}}
             animate={{opacity:1,x:0}} 
-            className="sm:text-3xl text-xl bg-gradient-to-r mb-1 sm:mb-5 from-blue-200 to-purple-300 bg-clip-text text-transparent">Ali-<span className="">Rahimpoor</span>
+            className="sm:text-3xl text-xl bg-gradient-to-r mb-1 sm:mb-5 from-blue-200 to-purple-300 bg-clip-text text-transparent">
+               <Link to={'/about'}>
+               Ali-<span className="">Rahimpoor</span>
+               </Link>
             </motion.h1>
             <ul className="flex items-center justify-between pr-0 lg:pr-12 sm:text-xl text-lg md:gap-x-8">
                {

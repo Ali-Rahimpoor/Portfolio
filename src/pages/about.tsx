@@ -3,17 +3,18 @@ import { FaGithub } from "react-icons/fa6"
 import { CgMail } from "react-icons/cg"
 import SkillBar from "../components/Skillbar"
 import img_URL from "../../src/assets/img/about.jpg";
+import { Link } from "react-router-dom";
 const About = ()=>{
 
     const skills = [
-    { name: "JavaScript", level: 50 },
+    { name: "JavaScript", level: 60 },
     { name: "TypeScript", level: 35 },
-    { name: "React", level: 55 },
-    { name: "Next.js", level: 35 },
+    { name: "React", level: 65 },
+    { name: "Next.js", level: 40 },
     { name: "Redux", level: 60 },
     { name: "Unity / C#", level: 35 },
-    { name: "HTML & CSS", level: 70 },
-    { name: "Tailwind CSS", level: 65 },
+    { name: "HTML & CSS", level: 80 },
+    { name: "Tailwind CSS", level: 70 },
   ];
 
    return (
@@ -32,8 +33,8 @@ const About = ()=>{
                                   </div>
                           </div>
                           <div className="flex justify-center gap-x-10">
-                           <FaGithub size={23} className="hover:scale-110 transition-transform" />
-                          <CgMail size={23} className="hover:scale-110 transition-transform"/>
+                      <Link to={'https://github.com/Ali-Rahimpoor'} target="_blank"><FaGithub className="sm:size-7 size-6 transition-transform hover:scale-105" /></Link>
+         <Link to={'mailto:ali.rahimpor.ar@gmail.com'}><CgMail className="sm:size-9 hover:scale-105 transition-transform size-6"/></Link>
                         </div>
                   </motion.div>
          </div>
