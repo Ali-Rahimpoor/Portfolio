@@ -5,15 +5,16 @@ import FeedBack_img from "../assets/projectImg/comment.png";
 import Gallery_img from "../assets/projectImg/gallery.png";
 import Todo_img from "../assets/projectImg/todo.png";
 import Weather_img from "../assets/projectImg/weather.png";
+import coffeeShop_img from "../assets/projectImg/coffeshop.png";
 import { useState } from "react";
 
 const Projects = () => {
   const projects = [
     {
-      title: "Online Shop",
-      img_url: OnlineShop_img,
-      description: "Modern e-commerce application built with cutting-edge frontend technologies for my developer portfolio.",
-      link: "https://github.com/Ali-Rahimpoor/demo-OnllineShop"
+      title:"Coffee Shop OnlineShop",
+      img_url:coffeeShop_img,
+      description:"Modern e-commerce website built with React + vite + Redux + typeScript + tailwindcss",
+      link:"https://ali-rahimpoor.github.io/Coffee-Shop/"
     },
     {
       title: "FeedBack Application",
@@ -26,6 +27,12 @@ const Projects = () => {
       img_url: Weather_img,
       description: "Show Weather website modern and responsive project",
       link: "https://ali-rahimpoor.github.io/Weather/"
+    },
+    {
+      title: "Online Shop",
+      img_url: OnlineShop_img,
+      description: "Modern e-commerce application built with cutting-edge frontend technologies for my developer portfolio.",
+      link: "https://github.com/Ali-Rahimpoor/demo-OnllineShop"
     },
     {
       title: "Todo List",
